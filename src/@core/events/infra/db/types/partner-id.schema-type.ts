@@ -11,6 +11,7 @@ export class PartnerIdSchemaType extends Type<PartnerId, string> {
       : (valueObject as string);
   }
 
+  //não funciona para relacionamentos
   convertToJSValue(value: string, platform: Platform): PartnerId {
     return new PartnerId(value);
   }
