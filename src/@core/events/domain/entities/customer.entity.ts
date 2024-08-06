@@ -32,10 +32,6 @@ export class Customer extends AggregateRoot {
     });
   }
 
-  equals(obj: this): boolean {
-    throw new Error('Method not implemented');
-  }
-
   toJSON() {
     return {
       id: this.id,
