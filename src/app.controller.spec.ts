@@ -10,7 +10,6 @@ test('deve criar um partner', async () => {
     port: 3306,
     user: 'root',
     password: 'root',
-    type: 'mysql',
     forceEntityConstructor: true,
   });
   await orm.schema.refreshDatabase();

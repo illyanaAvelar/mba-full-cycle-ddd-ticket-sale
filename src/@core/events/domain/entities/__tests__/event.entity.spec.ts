@@ -25,6 +25,19 @@ describe('Event Entity Unit Tests', () => {
     const [section] = event.sections;
 
     expect(section.spots.size).toBe(100);
+
+    // const spot = EventSpot.create();
+
+    // section.spots.add(spot);
+
+    // console.dir(event.toJSON(), { depth: 10 });
+
+    // não é valido
+    // customer = new Customer({
+    //   id: '123', new CustomerId() || new CustomerId('')
+    //   name: 'João',
+    //   cpf: '99346413050',
+    // });
   });
 
   test('deve publicar todos os itens do evento', () => {

@@ -239,7 +239,7 @@ export class Event extends AggregateRoot {
     return {
       id: this.id.value,
       name: this.name,
-      description: this.descr   iption,
+      description: this.description,
       date: this.date,
       is_published: this.is_published,
       total_spots: this.total_spots,
