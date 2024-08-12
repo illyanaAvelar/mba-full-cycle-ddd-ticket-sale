@@ -10,6 +10,7 @@ test('deve criar um partner', async () => {
     port: 3306,
     user: 'root',
     password: 'root',
+    type: 'mysql',
     forceEntityConstructor: true,
   });
   await orm.schema.refreshDatabase();
@@ -19,7 +20,7 @@ test('deve criar um partner', async () => {
   console.log(partner.id);
   em.persist(partner);
   await em.flush();
-  await em.clear();
+  await em.clear(); // limpa o cache do entity manager (unit of work)
 
   const partnerFound = await em.findOne(Partner, { id: partner.id });
   console.log(partnerFound);

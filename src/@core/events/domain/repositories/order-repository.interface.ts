@@ -1,5 +1,5 @@
 import { IRepository } from '../../../common/domain/repository-interface';
-import { Customer } from '../entities/customer.entity';
+import { Order } from '../entities/order.entity';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface ICustomerRepository extends IRepository<Customer> {}
+export interface IOrderRepository extends IRepository<Order> {}
